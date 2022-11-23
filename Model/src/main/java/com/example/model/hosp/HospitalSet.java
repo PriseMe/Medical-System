@@ -1,9 +1,6 @@
 package com.example.model.hosp;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -80,6 +77,7 @@ public class HospitalSet implements Serializable {
     /**
      * 逻辑删除(1:已删除，0:未删除)
      */
+    @TableLogic
     private Integer isDeleted;
 
 
